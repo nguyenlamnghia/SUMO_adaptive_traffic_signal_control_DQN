@@ -1,0 +1,6 @@
+Fixed Traffic Control Simulation
+Average Queue Length: 45.47
+Average Waiting Time: 601.37 s
+Average Waiting Time per Vehicle: 12.88 s
+Average Reward: 3.14
+Cumulative Reward: 1636.20

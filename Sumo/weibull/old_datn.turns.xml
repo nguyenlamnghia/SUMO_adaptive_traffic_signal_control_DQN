@@ -1,0 +1,19 @@
+<turns>
+    <interval begin="0" end="7200">
+        <edgeRelation from="HQC_J4_J3" to="HQC_J3_J2" probability="0.26"/>
+        <edgeRelation from="HQC_J4_J3" to="PVB_J3_J5" probability="0.71"/>
+        <edgeRelation from="HQC_J4_J3" to="PVB_J3_J1" probability="0.03"/>
+        
+        <edgeRelation from="HQC_J2_J3" to="HQC_J3_J4" probability="0.26"/>
+        <edgeRelation from="HQC_J2_J3" to="PVB_J3_J1" probability="0.03"/>
+        <edgeRelation from="HQC_J2_J3" to="PVB_J3_J5" probability="0.71"/>
+        
+        <edgeRelation from="PVB_J6_J3" to="PVB_J3_J1" probability="0.79"/>
+        <edgeRelation from="PVB_J6_J3" to="HQC_J3_J2" probability="0.09"/>
+        <edgeRelation from="PVB_J6_J3" to="HQC_J3_J4" probability="0.12"/>
+        
+        <edgeRelation from="PVB_J0_J3" to="PVB_J3_J5" probability="0.79"/>
+        <edgeRelation from="PVB_J0_J3" to="HQC_J3_J2" probability="0.12"/>
+        <edgeRelation from="PVB_J0_J3" to="HQC_J3_J4" probability="0.09"/>
+    </interval>
+</turns>

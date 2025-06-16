@@ -1,0 +1,28 @@
+=== FIXED TRAFFIC LIGHT CONTROL - OVERALL SUMMARY ===
+
+Control Configuration:
+- Phase 0 (Green): 50s
+- Phase 3 (Green): 30s
+- Phase 6 (Green): 20s
+- Yellow Time: 3s
+- Red Time: 1s
+- Total Epochs: 1
+- Simulation Time per Epoch: 7200s
+
+Performance Metrics (Averaged across all epochs):
+- Average Queue Length: 150.27 vehicles
+- Average Total Waiting Time: 3344.65 s
+- Average Waiting Time per Vehicle: 22.60 s
+- Average Reward per Cycle: 0.46
+- Average Cumulative Reward: 42.43
+- Average Throughput: 19.66 vehicles/cycle
+
+Per-Epoch Results:
+
+Epoch 1:
+  Queue Length: 150.27
+  Total Waiting Time: 3344.65 s
+  Waiting Time per Vehicle: 22.60 s
+  Average Reward: 0.46
+  Cumulative Reward: 42.43
+  Throughput: 19.66

@@ -1,0 +1,19 @@
+=== Fixed Traffic Light Control - Epoch 1 ===
+Control Method: Fixed Timing
+Phase 0 Green Time: 50s
+Phase 3 Green Time: 30s
+Phase 6 Green Time: 20s
+Yellow Time: 3s
+Red Time: 1s
+Total Cycles: 193
+Average Queue Length: 150.27
+Average Waiting Time: 3344.65 s
+Average Waiting Time per Vehicle: 22.60 s
+Average Reward: 0.46
+Cumulative Reward: 89.01
+Average Throughput: 19.66
+
+Phase Distribution:
+Phase 0 (50s): 65 times
+Phase 3 (30s): 64 times
+Phase 6 (20s): 64 times

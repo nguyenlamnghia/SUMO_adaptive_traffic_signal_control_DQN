@@ -1,0 +1,13 @@
+Epoch: 4
+Epsilon: 0.25
+Average Loss: 5.8032
+Average Queue Length: 93.65
+Average Waiting Time: 2550.41 s
+Average Waiting Time per Vehicle: 26.71 s
+Average Reward: 0.99
+Cumulative Reward: 93.10
+Action 0 (15s): 27
+Action 1 (25s): 21
+Action 2 (35s): 26
+Action 3 (45s): 45
+Action 4 (55s): 49

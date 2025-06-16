@@ -1,0 +1,19 @@
+Epoch: 6
+Epsilon: 0.34
+Average Loss: 0.1350
+Average Queue Length: 130.36
+Average Waiting Time: 3015.54 s
+Average Waiting Time per Vehicle: 21.45 s
+Average Reward: 0.49
+Cumulative Reward: 46.28
+Average Throughput: 20.35
+Vehicles Through:
+  motorcycle: 8030
+  passenger: 1554
+  bus: 33
+  truck: 19
+Action 0 (15s): 54
+Action 1 (25s): 46
+Action 2 (35s): 32
+Action 3 (45s): 35
+Action 4 (55s): 32
