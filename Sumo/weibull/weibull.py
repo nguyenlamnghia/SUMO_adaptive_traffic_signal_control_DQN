@@ -19,7 +19,7 @@ flows = [
     {"id": "flow7", "type": "bus", "from": "HQC_J2_J3", "vehsPerHour": 6, "total_vehicles": 12},
     {"id": "flow8", "type": "truck", "from": "HQC_J2_J3", "vehsPerHour": 2, "total_vehicles": 4},
     {"id": "flow9", "type": "car", "from": "PVB_J6_J3", "vehsPerHour": 500, "total_vehicles": 1000},
-    {"id": "flow10", "type": "motorbike", "from": "PVB_J6_J3", "vehsPerHour": 2500, "total_vehicles": 5000},
+    {"id": "flow10", "type": "motorbike", "from": "PVB_J6_J3", "vehsPerHour": 2500, "total_vehicles": 7599},
     {"id": "flow11", "type": "bus", "from": "PVB_J6_J3", "vehsPerHour": 4, "total_vehicles": 8},
     {"id": "flow12", "type": "truck", "from": "PVB_J6_J3", "vehsPerHour": 6, "total_vehicles": 12},
     {"id": "flow13", "type": "car", "from": "PVB_J0_J3", "vehsPerHour": 455, "total_vehicles": 910},
@@ -41,7 +41,7 @@ for flow in flows:
         continue  # Bỏ qua nếu không có xe
     
     # Sinh thời gian xuất hiện theo phân phối Weibull
-    vehicle_times = np.random.weibull(shape_param, total_vehicles) * scale_param
+    vehicle_times = np.random.weibull(shape_param, total_vehicles/2) * scale_param
     vehicle_times = np.sort(vehicle_times)  # Sắp xếp theo thời gian
     
     # Chia thành các bins

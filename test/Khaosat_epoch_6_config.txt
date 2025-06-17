@@ -1,0 +1,35 @@
+Epoch: 6
+Epsilon: 1.00
+Average Loss: nan
+Average Queue Length: 164.72
+Average Waiting Time: 4537.21 s
+Average Waiting Time per Vehicle: 26.68 s
+Average Reward: 0.60
+Cumulative Reward: 55.55
+Average Throughput: 20.99
+Vehicles Through:
+  motorcycle: 7993
+  passenger: 1550
+  bus: 30
+  truck: 18
+Action 0 (15s): 48
+Action 1 (25s): 37
+Action 2 (35s): 37
+Action 3 (45s): 35
+Action 4 (55s): 35
+Count Jam: 1
+phase 0 reward: 1.25
+phase 3 reward: 0.40
+phase 6 reward: 0.16
+phase 0 reward max: 2.86
+phase 3 reward max: 0.64
+phase 6 reward max: 0.43
+Number of action phase 0 max: 0
+Number of action phase 3 max: 0
+Number of action phase 6 max: 0
+phase 0 reward min: 0.00
+phase 3 reward min: 0.01
+phase 6 reward min: 0.01
+Number of action phase 0 min: 0
+Number of action phase 3 min: 4
+Number of action phase 6 min: 4
