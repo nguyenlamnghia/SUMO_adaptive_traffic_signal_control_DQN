@@ -1,0 +1,26 @@
+{
+    "model_name": "quad_dqn",
+    "timestamp": "20250618_170917",
+    "total_cycles": 379,
+    "simulation_time": 7200,
+    "avg_queue_length": 56.64643799472295,
+    "avg_waiting_time": 56.64643799472295,
+    "avg_waiting_time_per_vehicle": 0.9973614775725593,
+    "avg_occupancy": 59.88044042073454,
+    "avg_density": 236.02682497801229,
+    "total_throughput": 4092.700000000002,
+    "avg_throughput_per_cycle": 10.798680738786281,
+    "avg_flow_rate": 245.96751338068208,
+    "total_jams": 0,
+    "total_vehicles_through": 9707,
+    "avg_speed": 0.7460053317782318,
+    "total_fuel_consumption": 16171129.08465325,
+    "total_co2_emission": 50707738.38624514,
+    "action_distribution": {
+        "action_0_15s": 379,
+        "action_1_25s": 0,
+        "action_2_35s": 0,
+        "action_3_45s": 0,
+        "action_4_55s": 0
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "control_method": "FixedTimer_Balanced",
+    "green_times_config": {
+        "0": 50,
+        "3": 30,
+        "6": 20
+    },
+    "timestamp": "20250618_175632",
+    "total_cycles": 193,
+    "simulation_time": 7200,
+    "avg_queue_length": 71.93264248704664,
+    "avg_waiting_time": 71.93264248704664,
+    "avg_waiting_time_per_vehicle": 0.9948186528497409,
+    "avg_occupancy": 76.3585352241149,
+    "avg_density": 299.71934369602764,
+    "total_throughput": 4077.1999999999994,
+    "avg_throughput_per_cycle": 21.12538860103626,
+    "avg_flow_rate": 250.00386976033968,
+    "total_jams": 0,
+    "total_vehicles_through": 9667,
+    "avg_speed": 0.4215620524250729,
+    "total_fuel_consumption": 10746149.735756755,
+    "total_co2_emission": 33695184.208660014,
+    "phase_distribution": {
+        "phase_0_50s": 65,
+        "phase_3_30s": 64,
+        "phase_6_20s": 64
+    }
+}
