@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-06-18 15:48:35 by Eclipse SUMO GUI Version 1.22.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value=".\Sumo\actuated\datn.net.xml"/>
+        <route-files value=".\Sumo\actuated\./routes.rou.xml"/>
+        <additional-files value=".\Sumo\actuated\datn.add.xml"/>
+    </input>
+
+    <time>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.1"/>
+    </processing>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="300.00" id="HQC_J4_J3_0" sampledSeconds="35.61" nVehEntered="3" nVehLeft="1" nVehSeen="3" meanSpeed="2.62" meanTimeLoss="9.80" meanOccupancy="0.92" maxOccupancy="15.00" meanMaxJamLengthInVehicles="0.08" meanMaxJamLengthInMeters="0.12" maxJamLengthInVehicles="2" maxJamLengthInMeters="2.20" jamLengthInVehiclesSum="240" jamLengthInMetersSum="347.60" meanHaltingDuration="13.00" maxHaltingDuration="16.80" haltingDurationSum="26.00" meanIntervalHaltingDuration="13.00" maxIntervalHaltingDuration="16.80" intervalHaltingDurationSum="26.00" startedHalts="2.00" meanVehicleNumber="0.12" maxVehicleNumber="2" />
+   <interval begin="300.00" end="600.00" id="HQC_J4_J3_0" sampledSeconds="1254.55" nVehEntered="28" nVehLeft="18" nVehSeen="30" meanSpeed="0.65" meanTimeLoss="39.92" meanOccupancy="33.84" maxOccupancy="95.67" meanMaxJamLengthInVehicles="3.52" meanMaxJamLengthInMeters="6.13" maxJamLengthInVehicles="12" maxJamLengthInMeters="21.99" jamLengthInVehiclesSum="10750" jamLengthInMetersSum="18886.21" meanHaltingDuration="27.07" maxHaltingDuration="87.30" haltingDurationSum="1109.90" meanIntervalHaltingDuration="26.44" maxIntervalHaltingDuration="87.30" intervalHaltingDurationSum="1083.90" startedHalts="45.00" meanVehicleNumber="4.19" maxVehicleNumber="12" />
+   <interval begin="600.00" end="900.00" id="HQC_J4_J3_0" sampledSeconds="3498.76" nVehEntered="40" nVehLeft="38" nVehSeen="52" meanSpeed="0.36" meanTimeLoss="65.64" meanOccupancy="96.26" maxOccupancy="141.17" meanMaxJamLengthInVehicles="9.87" meanMaxJamLengthInMeters="19.83" maxJamLengthInVehicles="18" maxJamLengthInMeters="30.00" jamLengthInVehiclesSum="31264" jamLengthInMetersSum="63755.49" meanHaltingDuration="32.89" maxHaltingDuration="157.10" haltingDurationSum="3486.30" meanIntervalHaltingDuration="28.81" maxIntervalHaltingDuration="157.10" intervalHaltingDurationSum="3053.50" startedHalts="103.00" meanVehicleNumber="11.68" maxVehicleNumber="18" />
+   <interval begin="900.00" end="1200.00" id="HQC_J4_J3_0" sampledSeconds="3761.50" nVehEntered="38" nVehLeft="31" nVehSeen="52" meanSpeed="0.29" meanTimeLoss="70.93" meanOccupancy="112.90" maxOccupancy="163.74" meanMaxJamLengthInVehicles="11.17" meanMaxJamLengthInMeters="25.09" maxJamLengthInVehicles="21" maxJamLengthInMeters="30.00" jamLengthInVehiclesSum="34316" jamLengthInMetersSum="76931.81" meanHaltingDuration="49.37" maxHaltingDuration="291.40" haltingDurationSum="4344.80" meanIntervalHaltingDuration="37.58" maxIntervalHaltingDuration="134.30" intervalHaltingDurationSum="3306.90" startedHalts="79.00" meanVehicleNumber="12.55" maxVehicleNumber="21" />
+   <interval begin="1200.00" end="1471.80" id="HQC_J4_J3_0" sampledSeconds="4428.73" nVehEntered="29" nVehLeft="35" nVehSeen="50" meanSpeed="0.23" meanTimeLoss="87.27" meanOccupancy="133.03" maxOccupancy="163.74" meanMaxJamLengthInVehicles="14.37" meanMaxJamLengthInMeters="25.90" maxJamLengthInVehicles="21" maxJamLengthInMeters="30.00" jamLengthInVehiclesSum="41421" jamLengthInMetersSum="75334.00" meanHaltingDuration="40.51" maxHaltingDuration="122.80" haltingDurationSum="4861.30" meanIntervalHaltingDuration="34.69" maxIntervalHaltingDuration="122.80" intervalHaltingDurationSum="4162.50" startedHalts="109.00" meanVehicleNumber="16.31" maxVehicleNumber="21" />
+</detector>

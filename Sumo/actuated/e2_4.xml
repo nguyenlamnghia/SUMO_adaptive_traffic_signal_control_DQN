@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-06-18 15:48:35 by Eclipse SUMO GUI Version 1.22.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value=".\Sumo\actuated\datn.net.xml"/>
+        <route-files value=".\Sumo\actuated\./routes.rou.xml"/>
+        <additional-files value=".\Sumo\actuated\datn.add.xml"/>
+    </input>
+
+    <time>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.1"/>
+    </processing>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="300.00" id="PVB_J0_J3_1" sampledSeconds="228.78" nVehEntered="16" nVehLeft="13" nVehSeen="16" meanSpeed="1.49" meanTimeLoss="13.11" meanOccupancy="7.10" maxOccupancy="65.01" meanMaxJamLengthInVehicles="0.51" meanMaxJamLengthInMeters="1.01" maxJamLengthInVehicles="5" maxJamLengthInMeters="12.21" jamLengthInVehiclesSum="1535" jamLengthInMetersSum="3096.90" meanHaltingDuration="13.42" maxHaltingDuration="28.40" haltingDurationSum="161.00" meanIntervalHaltingDuration="13.42" maxIntervalHaltingDuration="28.40" intervalHaltingDurationSum="161.00" startedHalts="13.00" meanVehicleNumber="0.77" maxVehicleNumber="7" />
+   <interval begin="300.00" end="600.00" id="PVB_J0_J3_1" sampledSeconds="419.64" nVehEntered="43" nVehLeft="46" nVehSeen="46" meanSpeed="2.26" meanTimeLoss="7.95" meanOccupancy="12.54" maxOccupancy="58.84" meanMaxJamLengthInVehicles="0.76" meanMaxJamLengthInMeters="1.90" maxJamLengthInVehicles="6" maxJamLengthInMeters="11.11" jamLengthInVehiclesSum="2388" jamLengthInMetersSum="6007.81" meanHaltingDuration="11.38" maxHaltingDuration="36.70" haltingDurationSum="238.90" meanIntervalHaltingDuration="11.38" maxIntervalHaltingDuration="36.70" intervalHaltingDurationSum="238.90" startedHalts="27.00" meanVehicleNumber="1.41" maxVehicleNumber="7" />
+   <interval begin="600.00" end="900.00" id="PVB_J0_J3_1" sampledSeconds="879.73" nVehEntered="61" nVehLeft="58" nVehSeen="61" meanSpeed="1.29" meanTimeLoss="13.36" meanOccupancy="25.28" maxOccupancy="100.84" meanMaxJamLengthInVehicles="2.04" meanMaxJamLengthInMeters="4.74" maxJamLengthInVehicles="11" maxJamLengthInMeters="24.59" jamLengthInVehiclesSum="6420" jamLengthInMetersSum="14929.41" meanHaltingDuration="14.68" maxHaltingDuration="73.30" haltingDurationSum="572.60" meanIntervalHaltingDuration="14.68" maxIntervalHaltingDuration="73.30" intervalHaltingDurationSum="572.60" startedHalts="49.00" meanVehicleNumber="2.94" maxVehicleNumber="12" />
+   <interval begin="900.00" end="1200.00" id="PVB_J0_J3_1" sampledSeconds="1334.44" nVehEntered="83" nVehLeft="76" nVehSeen="86" meanSpeed="1.02" meanTimeLoss="14.64" meanOccupancy="40.33" maxOccupancy="137.84" meanMaxJamLengthInVehicles="3.16" meanMaxJamLengthInMeters="8.65" maxJamLengthInVehicles="15" maxJamLengthInMeters="30.00" jamLengthInVehiclesSum="10283" jamLengthInMetersSum="27558.12" meanHaltingDuration="16.21" maxHaltingDuration="73.20" haltingDurationSum="843.10" meanIntervalHaltingDuration="16.13" maxIntervalHaltingDuration="73.20" intervalHaltingDurationSum="838.60" startedHalts="73.00" meanVehicleNumber="4.46" maxVehicleNumber="16" />
+   <interval begin="1200.00" end="1471.80" id="PVB_J0_J3_1" sampledSeconds="1345.74" nVehEntered="79" nVehLeft="86" nVehSeen="89" meanSpeed="1.11" meanTimeLoss="14.16" meanOccupancy="42.13" maxOccupancy="116.67" meanMaxJamLengthInVehicles="3.63" meanMaxJamLengthInMeters="7.83" maxJamLengthInVehicles="13" maxJamLengthInMeters="25.12" jamLengthInVehiclesSum="10207" jamLengthInMetersSum="22256.31" meanHaltingDuration="19.71" maxHaltingDuration="74.60" haltingDurationSum="886.90" meanIntervalHaltingDuration="18.71" maxIntervalHaltingDuration="74.60" intervalHaltingDurationSum="842.10" startedHalts="50.00" meanVehicleNumber="4.97" maxVehicleNumber="14" />
+</detector>

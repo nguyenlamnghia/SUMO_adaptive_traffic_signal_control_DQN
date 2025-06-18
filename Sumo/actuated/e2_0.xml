@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-06-18 15:48:35 by Eclipse SUMO GUI Version 1.22.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value=".\Sumo\actuated\datn.net.xml"/>
+        <route-files value=".\Sumo\actuated\./routes.rou.xml"/>
+        <additional-files value=".\Sumo\actuated\datn.add.xml"/>
+    </input>
+
+    <time>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.1"/>
+    </processing>
+
+</sumoConfiguration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e2_file.xsd">
+   <interval begin="0.00" end="300.00" id="PVB_J6_J3_1" sampledSeconds="154.19" nVehEntered="14" nVehLeft="14" nVehSeen="14" meanSpeed="1.19" meanTimeLoss="10.30" meanOccupancy="5.35" maxOccupancy="36.61" meanMaxJamLengthInVehicles="0.36" meanMaxJamLengthInMeters="1.01" maxJamLengthInVehicles="2" maxJamLengthInMeters="4.44" jamLengthInVehiclesSum="1093" jamLengthInMetersSum="3044.39" meanHaltingDuration="16.61" maxHaltingDuration="26.30" haltingDurationSum="116.30" meanIntervalHaltingDuration="16.61" maxIntervalHaltingDuration="26.30" intervalHaltingDurationSum="116.30" startedHalts="11.00" meanVehicleNumber="0.52" maxVehicleNumber="4" />
+   <interval begin="300.00" end="600.00" id="PVB_J6_J3_1" sampledSeconds="445.26" nVehEntered="60" nVehLeft="58" nVehSeen="60" meanSpeed="2.95" meanTimeLoss="6.21" meanOccupancy="12.88" maxOccupancy="56.77" meanMaxJamLengthInVehicles="0.78" meanMaxJamLengthInMeters="1.43" maxJamLengthInVehicles="5" maxJamLengthInMeters="9.70" jamLengthInVehiclesSum="2349" jamLengthInMetersSum="4357.38" meanHaltingDuration="12.68" maxHaltingDuration="38.40" haltingDurationSum="241.00" meanIntervalHaltingDuration="12.68" maxIntervalHaltingDuration="38.40" intervalHaltingDurationSum="241.00" startedHalts="23.00" meanVehicleNumber="1.50" maxVehicleNumber="9" />
+   <interval begin="600.00" end="900.00" id="PVB_J6_J3_1" sampledSeconds="846.76" nVehEntered="69" nVehLeft="67" nVehSeen="71" meanSpeed="1.66" meanTimeLoss="10.82" meanOccupancy="25.74" maxOccupancy="87.74" meanMaxJamLengthInVehicles="2.00" meanMaxJamLengthInMeters="4.89" maxJamLengthInVehicles="10" maxJamLengthInMeters="25.05" jamLengthInVehiclesSum="6146" jamLengthInMetersSum="14944.48" meanHaltingDuration="26.13" maxHaltingDuration="71.60" haltingDurationSum="496.50" meanIntervalHaltingDuration="26.13" maxIntervalHaltingDuration="71.60" intervalHaltingDurationSum="496.50" startedHalts="38.00" meanVehicleNumber="2.84" maxVehicleNumber="11" />
+   <interval begin="900.00" end="1200.00" id="PVB_J6_J3_1" sampledSeconds="1625.05" nVehEntered="82" nVehLeft="74" nVehSeen="86" meanSpeed="0.91" meanTimeLoss="17.94" meanOccupancy="46.10" maxOccupancy="132.27" meanMaxJamLengthInVehicles="4.20" meanMaxJamLengthInMeters="8.84" maxJamLengthInVehicles="16" maxJamLengthInMeters="30.00" jamLengthInVehiclesSum="12977" jamLengthInMetersSum="27385.33" meanHaltingDuration="22.95" maxHaltingDuration="79.30" haltingDurationSum="1170.40" meanIntervalHaltingDuration="22.89" maxIntervalHaltingDuration="79.30" intervalHaltingDurationSum="1167.30" startedHalts="70.00" meanVehicleNumber="5.43" maxVehicleNumber="16" />
+   <interval begin="1200.00" end="1471.80" id="PVB_J6_J3_1" sampledSeconds="1388.41" nVehEntered="75" nVehLeft="85" nVehSeen="87" meanSpeed="1.26" meanTimeLoss="14.84" meanOccupancy="47.74" maxOccupancy="132.08" meanMaxJamLengthInVehicles="3.49" meanMaxJamLengthInMeters="8.64" maxJamLengthInVehicles="15" maxJamLengthInMeters="30.00" jamLengthInVehiclesSum="10210" jamLengthInMetersSum="25258.04" meanHaltingDuration="21.22" maxHaltingDuration="74.30" haltingDurationSum="1103.50" meanIntervalHaltingDuration="19.90" maxIntervalHaltingDuration="74.30" intervalHaltingDurationSum="1034.60" startedHalts="59.00" meanVehicleNumber="5.13" maxVehicleNumber="16" />
+</detector>
