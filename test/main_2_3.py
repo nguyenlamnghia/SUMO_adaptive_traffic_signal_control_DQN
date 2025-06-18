@@ -473,7 +473,10 @@ for i in range(EPOCHS):
         else:
             reward = throughput/(green_time + YELLOW_TIME + RED_TIME)/0.63
 
-            
+
+        print("THROUGHPUT:", throughput)
+        
+        
 
         # reward = get_reward(before_vehicle_ids, after_vehicle_ids)
 

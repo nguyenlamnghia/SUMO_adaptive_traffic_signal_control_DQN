@@ -15,7 +15,7 @@ from scipy.ndimage import uniform_filter1d
 # Step 1: Configuration and Constants
 # ==========================================================
 SUMO_CONFIG = [
-    "sumo-gui", "--no-warnings",
+    "sumo", "--no-warnings",
     "-c", "../Sumo/v1/datn.sumocfg",
     "--step-length", "0.1",
     "--lateral-resolution", "0.1"
@@ -97,12 +97,13 @@ class TrafficLightEnv:
     def get_state(self, action=None):
         """Get current state of the environment."""
         current_phase = traci.trafficlight.getPhase(self.tls_id)
-        occupancy = [traci.lanearea.getLastStepOccupancy(d) for d in DETECTORS]
+        # occupancy = [traci.lanearea.getLastStepOccupancy(d) for d in DETECTORS]
         vehicle_counts = [self._convert_mean_vehicle(traci.lanearea.getLastStepVehicleIDs(d)) for d in DETECTORS]
         flow = ([self.incoming_vehicles_count[d] / (GREEN_TIMES[action] + YELLOW_TIME + RED_TIME)
                 for d in DETECTORS] if action is not None else [0] * len(DETECTORS))
+        occupancy = [self._get_area_occupancy(d) for d in DETECTORS]
         print(occupancy)
-        state = np.array(vehicle_counts + flow + [current_phase], dtype=np.float32)
+        state = np.array(occupancy + flow + [current_phase], dtype=np.float32)
         return state
 
     def apply_action(self, action):
@@ -168,13 +169,14 @@ class TrafficLightEnv:
 
     def get_reward(self, throughput, action, current_phase):
         """Calculate reward based on throughput and phase."""
-        green_time = GREEN_TIMES[action]
-        if current_phase == 0:
-            return throughput / (green_time + YELLOW_TIME + RED_TIME) / 2.69
-        elif current_phase == 3:
-            return throughput / (green_time + YELLOW_TIME + RED_TIME) / 0.71
-        else:
-            return throughput / (green_time + YELLOW_TIME + RED_TIME) / 0.63
+        # green_time = GREEN_TIMES[action]
+        # if current_phase == 0:
+        #     return throughput / (green_time + YELLOW_TIME + RED_TIME) / 2.69
+        # elif current_phase == 3:
+        #     return throughput / (green_time + YELLOW_TIME + RED_TIME) / 0.71
+        # else:
+        #     return throughput / (green_time + YELLOW_TIME + RED_TIME) / 0.63
+        
 
     def _convert_mean_vehicle(self, vehicles):
         """Convert vehicle list to weighted sum based on vehicle type."""
@@ -184,6 +186,26 @@ class TrafficLightEnv:
         """Get all vehicles in the junction."""
         lanes = [l for l in traci.lane.getIDList() if l.startswith(":J3_")]
         return [veh for lane in lanes for veh in traci.lane.getLastStepVehicleIDs(lane)]
+
+    def _get_area_occupancy(self, detector_id):
+        length = traci.lanearea.getLength(detector_id)
+        width = traci.lane.getWidth(traci.lanearea.getLaneID(detector_id))
+
+        area_detector = width * length
+
+        vehicle_ids = traci.lanearea.getLastStepVehicleIDs(detector_id)
+        total_vehicle_area = 0.0
+        for vid in vehicle_ids:
+            try:
+                veh_length = traci.vehicle.getLength(vid)
+                veh_width = traci.vehicle.getWidth(vid)
+                total_vehicle_area += veh_length * veh_width
+            except Exception:
+                pass  # có thể xe đã rời đi
+
+        # 3. Tính tỷ lệ chiếm dụng
+        occupancy_percent = (total_vehicle_area / area_detector) * 100.0
+        return min(occupancy_percent, 100.0)  # không vượt quá 100%
 
     def get_metrics(self):
         """Get environment metrics: waiting time, vehicles, queue length."""
@@ -308,9 +330,13 @@ def train_dqn(epochs):
 
             total_waiting_time, avg_waiting_time, queue_length = env.get_metrics()
             throughput = env.apply_action(action)
-            reward = env.get_reward(throughput, action, current_phase) + env.handle_jam()
+            # reward = env.get_reward(throughput, action, current_phase) + env.handle_jam()
 
             new_state = env.get_state(action)
+
+            reward = sum(state[:8]) - sum (new_state[:8])
+            print(reward)
+
             env.replay_buffer.append((state, action, reward, new_state, env.step >= STEP_SIMULATION))
             result = dqn.train(env.replay_buffer)
 
@@ -461,4 +487,4 @@ def plot_results(epoch_data, epochs):
 # Step 9: Main Execution
 # ==========================================================
 if __name__ == "__main__":
-    train_dqn(2)
+    train_dqn(10)
